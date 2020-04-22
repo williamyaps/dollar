@@ -1,0 +1,87 @@
+<div class="row justify-content-end">
+<div class="col-lg-6">
+<div class="bold colorDarkGrey2">Pilih Mata Uang :</div>
+<div class="form-select colorGreen">
+<div class="ueMaterialSelectContainer">
+<select class="colorGreen bold" id="category" name="category" onchange="window.location.href=this.value">
+<option value="kurs-valuta-asing.htm?kurs=USD">
+USD </option>
+<option value="kurs-valuta-asing.htm?kurs=AUD">
+AUD </option>
+<option value="kurs-valuta-asing.htm?kurs=EUR">
+EUR </option>
+ <option value="kurs-valuta-asing.htm?kurs=GBP">
+GBP </option>
+<option value="kurs-valuta-asing.htm?kurs=JPY">
+JPY </option>
+<option value="kurs-valuta-asing.htm?kurs=SGD" selected="selected">
+SGD </option>
+<option value="kurs-valuta-asing.htm?kurs=MYR">
+MYR </option>
+<option value="kurs-valuta-asing.htm?kurs=HKD">
+HKD </option>
+<option value="kurs-valuta-asing.htm?kurs=CHF">
+CHF </option>
+<option value="kurs-valuta-asing.htm?kurs=CNY">
+CNY </option>
+<option value="kurs-valuta-asing.htm?kurs=KRW">
+KRW </option>
+</select>
+</div>
+</div>
+</div>
+<div class="uespacer10 col-12 d-none d-md-block d-lg-none d-sm-block d-md-none d-block d-sm-none"></div>
+<div class="col-lg-6">
+<form action="kurs-valuta-asing.htm" class="ueFormCheck" method="get">
+<div class="row">
+<div class="col-lg-4 col-12">
+<input type="hidden" name="kurs" value="SGD">
+<div class="bold colorDarkGrey2">
+Pencarian Dari Tanggal :
+</div>
+<div class="uespacer10"></div>
+<div class="defaultcssout">
+<div id="dtBoxsearchdatefrom" class="dtpicker-overlay dtpicker-mobile"><div class="dtpicker-bg"><div class="dtpicker-cont"><div class="dtpicker-content"><div class="dtpicker-subcontent"></div></div></div></div></div>
+<input type="text" id="searchdatefrom" name="searchdatefrom" class="ueInputText" placeholder="Tanggal Pencarian" data-field="date" readonly="" value="22-02-2019" data-formcheck="~!nan" data-formcheck-err="Tanggal Lahir Harus Diisi">
+<script type="text/javascript">
+			$('#dtBoxsearchdatefrom').DateTimePicker({
+				buttonsToDisplay: ['HeaderCloseButton','SetButton'],
+				titleContentDate: '',
+				titleContentTime: '',
+				titleContentDateTime: '',
+				animationDuration: 200,
+				shortDayNames: ['','','','','','','']
+			});
+		</script>
+</div>
+</div>
+<div class="uespacer10 col-12 d-none d-md-block d-lg-none d-sm-block d-md-none d-block d-sm-none"></div>
+<div class="col-lg-4 col-12 align-self-end">
+<div class="bold colorDarkGrey2">
+Sampai :
+</div>
+<div class="uespacer10"></div>
+<div class="defaultcssout">
+<input type="text" id="searchdateto" name="searchdateto" class="ueInputText" placeholder="Tanggal Pencarian" data-field="date" readonly="" value="22-04-2020" data-formcheck="~!nan" data-formcheck-err="Tanggal Lahir Harus Diisi">
+<script type="text/javascript">
+			$('#dtBoxsearchdateto').DateTimePicker({
+				buttonsToDisplay: ['HeaderCloseButton','SetButton'],
+				titleContentDate: '',
+				titleContentTime: '',
+				titleContentDateTime: '',
+				animationDuration: 200,
+				shortDayNames: ['','','','','','','']
+			});
+		</script>
+</div>
+</div>
+<div class="uespacer10 col-12 d-none d-md-block d-lg-none d-sm-block d-md-none d-block d-sm-none"></div>
+<div class="col-lg-4 align-self-end">
+<div>
+<input class="greenBtnSubmit bold pnovafont" style="padding:9px;" type="submit" value="Tampilkan">
+</div>
+</div>
+</div>
+</form>
+</div>
+</div>
